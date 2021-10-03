@@ -1,12 +1,15 @@
 # so-tetris-python
 Tetris Demo
+  ```
+    python3 so-tetris-python/so_tetris_mania.py >> logs.txt 2>&1
+``` 
 - Quick attempt to demo OOPS and DDD in python
     -  Initial rough code is present in so-tetris-python/so-dev/so_tetris_dev_full.py
     -  Later refactored the code as per OOPS recommendations.
     -  Many items are still pending for calling it full-fledged game and can be taken up as time permits.
     
-- Dependencies => pygame
-- Dev Env => VSCode on macOS Big Sur
+- Dependencies : pygame
+- Dev Env : VSCode on macOS Big Sur
     
     
 - DDD Description
@@ -34,12 +37,13 @@ Tetris Demo
         - so_metadata - stores the game data for score state etc.
          
     -  Lauch of the app is from this file -
-            python3 so-tetris-python/so_tetris_mania.py >> logs.txt 2>&1
-            
+    ```
+        python3 so-tetris-python/so_tetris_mania.py >> logs.txt 2>&1
+    ```       
     -  Logger used - can configure to direct logs to specific file as per deployment.
     
     -  All the pending TODOs are captured in so_tetris_mania.py
+#
+# Screenshot 1
 
-Sample screenshot
-
-![alt text](https://github.com/soaprasri/so-tetris-python/blob/main/images/screenshot.png)
+![Sample screenshot](https://github.com/soaprasri/so-tetris-python/blob/main/images/screenshot.png)
