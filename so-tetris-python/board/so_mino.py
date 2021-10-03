@@ -1,5 +1,6 @@
 from config.board_config import BoardConfig
 from board.so_mino_helper import generate_new_shape, move_shape
+from typing import Type
 import logging
 
 logging.basicConfig( 
@@ -45,7 +46,7 @@ class Mino():
                 return False
         return True
 
-    def move(self, direction):
+    def move(self, direction: int):
         next_shape = move_shape(self._mino_x_pos_list, self._mino_y_pos_list, direction)
             
         next_shape_x = next_shape[0]
@@ -62,7 +63,7 @@ class Mino():
         return move_allowed
    
     
-    def __move(self, next_shape_x_pos_list, next_shape_y_pos_list):
+    def __move(self, next_shape_x_pos_list: list[int], next_shape_y_pos_list: list[int]):
         for i in range(4):
             self._board[self._mino_x_pos_list[i]
                         ][self._mino_y_pos_list[i]].color = BoardConfig.COL_EMPTY
@@ -79,7 +80,7 @@ class Mino():
             self._board[self._mino_x_pos_list[i]
                         ][self._mino_y_pos_list[i]].active = BoardConfig.TYPE_FILLED_ACTIVE
 
-    def __is_move_allowed(self, next_shape_x, next_shape_y):
+    def __is_move_allowed(self, next_shape_x: list[int], next_shape_y: list[int]):
         for i in range(4):
             logger.debug(f"is_move_allowed => {i}")
             next_x = next_shape_x[i]
@@ -93,9 +94,7 @@ class Mino():
             else:
                 return False
         return True
-        logger.debug("hot_cell_y[i] =>" + str(hot_cell_y[i]) + ", [hot_cell_x[i]] =>" +  str(hot_cell_x[i]))
-        logger.debug("old_hot_cell_y[i] =>" + str(old_hot_cell_y[i]) + ", [old_hot_cell_x[i]] =>" + str(old_hot_cell_x[i]))
-
+        
     def freeze(self):
         for i in range(4):
             self._board[self._mino_x_pos_list[i]

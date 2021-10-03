@@ -1,7 +1,7 @@
 from config.board_config import BoardConfig
 
 class BoardCell():
-    def __init__(self, color, active) -> None:
+    def __init__(self, color: int, active: int) -> None:
         self._color = color
         self._active = active
         pass

@@ -48,7 +48,7 @@ class Board():
             logger.info("Could not spawn Mino, GAME OVER!!")
             self._game_over = True
 
-    def move(self, direction):
+    def move(self, direction: int):
         if(self._game_over):
             logger.info("GAME OVER!!")
             return
@@ -87,7 +87,7 @@ class Board():
                 count = count + 1
         return count
 
-    def __remove_row(self, row_num):
+    def __remove_row(self, row_num: int):
         for y in range(row_num, 1, -1):
             for x in range(0, BoardConfig.board_max_col-1):
 

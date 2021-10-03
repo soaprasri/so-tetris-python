@@ -1,7 +1,15 @@
 from config.board_config import BoardConfig
 from config.display_config import DisplayConfig
 
-def get_cell_color_from_code(cell_color_code):
+def get_cell_color_from_code(cell_color_code: int):
+    """Generates actual pygame colors for give Board color code
+
+    Args:
+        cell_color_code (int): Board Cell color code
+
+    Returns:
+        Actual pygame color corresponding to the color code
+    """
     if(cell_color_code == BoardConfig.COL_RED):
         cell_color = (DisplayConfig.RED)
     elif(cell_color_code == BoardConfig.COL_YELLOW):

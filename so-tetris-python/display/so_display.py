@@ -22,8 +22,6 @@ class Display():
         self.screen = self.pygame.display.set_mode(
             (DisplayConfig.SCREEN_WIDTH, DisplayConfig.SCREEN_HEIGHT))
 
-        
-
         image = self.pygame.image.load(DisplayConfig.BG_IMAGE)
         self.image = self.pygame.transform.scale(
             image, (DisplayConfig.SCREEN_WIDTH, DisplayConfig.SCREEN_HEIGHT))
