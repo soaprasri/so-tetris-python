@@ -13,9 +13,9 @@ from board.so_metadata import GameData
 from board.so_board_cell import BoardCell
 import logging
 
-logging.basicConfig( 
-level=logging.INFO, 
-format='%(asctime)s | %(name)s | %(levelname)s | %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s | %(name)s | %(levelname)s | %(message)s')
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +52,7 @@ class Board():
         if(self._game_over):
             logger.info("GAME OVER!!")
             return
-        
+
         success = self._mino.move(direction)
         if(direction == BoardConfig.DIRECTION_DOWN and not success):
             self.__invalidate()
@@ -76,31 +76,28 @@ class Board():
 
     def __remove_completed_rows(self):
         count = 0
-        for y in range (0, BoardConfig.board_max_row):
+        for y in range(0, BoardConfig.board_max_row):
             completed = True
             for x in range(0, BoardConfig.board_max_col):
                 if(self._board[x][y].active == BoardConfig.TYPE_EMPTY):
                     completed = False
-                    
+
             if(completed == True):
                 self.__remove_row(y)
                 count = count + 1
         return count
-        
-    def __remove_row(self,row_num):
+
+    def __remove_row(self, row_num):
         for y in range(row_num, 1, -1):
-                for x in range(0, BoardConfig.board_max_col-1):
-                    
-                    self._board[x][y].color = self._board[x][y-1].color
-                    self._board[x][y].active = self._board[x][y-1].active
+            for x in range(0, BoardConfig.board_max_col-1):
+
+                self._board[x][y].color = self._board[x][y-1].color
+                self._board[x][y].active = self._board[x][y-1].active
 
         for x in range(0, BoardConfig.board_max_col-1):
-                self._board[x][0].color = BoardConfig.TYPE_EMPTY
-                self._board[x][0].active = BoardConfig.COL_EMPTY
-                    
-
+            self._board[x][0].color = BoardConfig.TYPE_EMPTY
+            self._board[x][0].active = BoardConfig.COL_EMPTY
 
     def game_over(self):
-#        self._game_data.on_game_completed()
+        #        self._game_data.on_game_completed()
         self._game_over = True
-
