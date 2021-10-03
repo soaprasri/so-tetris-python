@@ -39,3 +39,7 @@ Tetris Demo
     -  Logger used - can configure to direct logs to specific file as per deployment.
     
     -  All the pending TODOs are captured in so_tetris_mania.py
+
+Sample screenshot
+
+![alt text](https://github.com/soaprasri/so-tetris-python/blob/main/images/screenshot.png)
