@@ -23,7 +23,7 @@ class TetrisMania():
         3. Many items are still pending for calling it full-fledged game and can be taken up as time permits.
     
     Dependencies => pygame
-    Test Env => macOS Big Sur
+    Dev Env => VSCode on macOS Big Sur
     
     
     DDD =>
@@ -97,18 +97,17 @@ if __name__ == "__main__":
 
 
 """TODO -
-        Read oops in python -
-        static, class structure
-        #private methods, static methods, class methods
-        #private methods start with __(two underscores)
-        #static methods for similar to java utility static methods - utility methods
-        #class methods for factory - returning specific class objects.
+        # oops in python -
+        # static, class structure
+        # private methods, static methods, class methods
+        # private methods start with __(two underscores)
+        # static methods for similar to java utility static methods - utility methods
+        # class methods for factory - returning specific class objects.
         assigning types to parameters
-        moudle creation
-        logging
+        module creation
+        # logging
         documentation
-        github
-        try in pycharm = NOOOOO
+        # github
         
         if possible ->
         next shape -> display somewhere
