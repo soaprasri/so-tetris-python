@@ -11,8 +11,8 @@ Tetris Demo
     
 - DDD Description
     -  All the configurations in config directory
-        a) board_config
-        b) display_config
+        - board_config
+        - display_config
     -  Game app is divided into Display and Board
         - Display is for managing pygame aspects - Display of screen elements and capturing/handling of events
         - Board is the Gameplay code encapsulating the -
