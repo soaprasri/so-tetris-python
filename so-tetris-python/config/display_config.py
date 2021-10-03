@@ -5,15 +5,15 @@ class DisplayConfig():
     """All the configs for tuning the Tetris game display
     """
     #Screen Configs
-    SCREEN_WIDTH = 1200
-    SCREEN_HEIGHT = 800
+    SCREEN_WIDTH = 1000
+    SCREEN_HEIGHT = 780
 
-    BG_IMAGE = r'../../images/blue_bg.bmp'
-    # BG_IMAGE = r'/Users/soaprateek/Downloads/so-blue-bg.bmp'
+    BG_IMAGE = r'../../images/so-blue-bg.bmp'
+    # BG_IMAGE = r'/Users/soaprateek/Downloads/Untitled.bmp'
 
     #Board Configs
-    BOARD_X = 200
-    BOARD_Y = 10
+    BOARD_X = 250
+    BOARD_Y = 30
     BOARD_CELL_SIZE = 35 
 
     #Mino move down tick
