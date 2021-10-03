@@ -1,9 +1,9 @@
 # so-tetris-python
 Tetris Demo
 - Quick attempt to demo OOPS and DDD in python
-        *1.*  Initial rough code is present in so-tetris-python/so-dev/so_tetris_dev_full.py
-        2.  Later refactored the code as per OOPS recommendations.
-        3.  Many items are still pending for calling it full-fledged game and can be taken up as time permits.
+        *  Initial rough code is present in so-tetris-python/so-dev/so_tetris_dev_full.py
+        *  Later refactored the code as per OOPS recommendations.
+        *  Many items are still pending for calling it full-fledged game and can be taken up as time permits.
     
 - Dependencies => pygame
 - Dev Env => VSCode on macOS Big Sur
