@@ -106,12 +106,13 @@ if __name__ == "__main__":
         assigning types to parameters
         module creation
         # logging
-        documentation
+        # documentation - Added ReadMe and basic doc
         # github
         
         if possible ->
-        next shape -> display somewhere
-        one line delay while rendering
-        display of fonts + score etc.
+        Enhancement : next shape -> display somewhere
+        Enhancement : Actual rotate on up key press
+        Fix: one line delay while rendering
+        Enhancement: display of fonts + score etc.
         
     """

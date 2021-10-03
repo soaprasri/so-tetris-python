@@ -8,10 +8,11 @@ format='%(asctime)s | %(name)s | %(levelname)s | %(message)s')
 
 logger = logging.getLogger(__name__)
 
-
-
-
 class TetrisEventListener():
+    """PyGame events listener
+    
+    Receives all pygame events and pushes them to appropriate modules
+    """
     def __init__(self, board) -> None:
         self.board = board
         self.app_exit = False

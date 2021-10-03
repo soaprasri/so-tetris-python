@@ -1,4 +1,6 @@
 class BoardConfig():
+    """All the configs for tuning various game play aspects
+    """
     #Board array size
     board_max_row = 20
     board_max_col = 10

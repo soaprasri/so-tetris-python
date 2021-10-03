@@ -10,9 +10,9 @@ format='%(asctime)s | %(name)s | %(levelname)s | %(message)s')
 
 logger = logging.getLogger(__name__)
 
-
-
 class Display():
+    """Display module for the Tetris demo using pygame
+    """
     def __init__(self, pygame, board) -> None:
         self.pygame = pygame
         self.board = board

@@ -2,6 +2,8 @@ class AppConfig():
     pass    
 
 class DisplayConfig():
+    """All the configs for tuning the Tetris game display
+    """
     #Screen Configs
     SCREEN_WIDTH = 1200
     SCREEN_HEIGHT = 800

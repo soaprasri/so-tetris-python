@@ -8,10 +8,9 @@ format='%(asctime)s | %(name)s | %(levelname)s | %(message)s')
 
 logger = logging.getLogger(__name__)
 
-
-
-
 class Mino():
+    """ Main DDD class for the Mino(tetris shape on the board)
+    """
     def __init__(self, board) -> None:
         self._board = board
         self._mino_x_pos_list = []
