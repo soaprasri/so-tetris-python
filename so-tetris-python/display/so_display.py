@@ -22,9 +22,13 @@ class Display():
         self.screen = self.pygame.display.set_mode(
             (DisplayConfig.SCREEN_WIDTH, DisplayConfig.SCREEN_HEIGHT))
 
-        image = self.pygame.image.load(DisplayConfig.BG_IMAGE)
-        self.image = self.pygame.transform.scale(
-            image, (DisplayConfig.SCREEN_WIDTH, DisplayConfig.SCREEN_HEIGHT))
+        try:
+            image = self.pygame.image.load(DisplayConfig.BG_IMAGE)
+            self.image = self.pygame.transform.scale(
+                image, (DisplayConfig.SCREEN_WIDTH, DisplayConfig.SCREEN_HEIGHT))
+        except Exception as e:
+            logger.info(f"Could not load background image due to {e}")
+            
     
     def invalidate(self):
         self.screen.fill(self.pygame.Color(DisplayConfig.SCREEN_COLOR))

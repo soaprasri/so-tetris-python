@@ -8,7 +8,8 @@ class DisplayConfig():
     SCREEN_WIDTH = 1200
     SCREEN_HEIGHT = 800
 
-    BG_IMAGE = r'/Users/soaprateek/Downloads/blue_bg.bmp'
+    BG_IMAGE = r'../../images/blue_bg.bmp'
+    # BG_IMAGE = r'/Users/soaprateek/Downloads/so-blue-bg.bmp'
 
     #Board Configs
     BOARD_X = 200
