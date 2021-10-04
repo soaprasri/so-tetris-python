@@ -1,5 +1,5 @@
 # so-tetris-python
-Tetris Demo
+Tetris Python OOPS and DDD Demo
   ```
     python3 so-tetris-python/so_tetris_mania.py >> logs.txt 2>&1
 ``` 
